@@ -1,2 +1,2 @@
 import { atomWithStorage } from "jotai/utils";
-export const bookmarksAtom = atomWithStorage("bookmarks", []);
+export const bookmarkAtoms = atomWithStorage("bookmarks", []);

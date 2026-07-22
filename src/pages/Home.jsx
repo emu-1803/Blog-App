@@ -13,7 +13,9 @@ function Home() {
         return res.json();
       })
       .then((data) => {
-        setPosts(data.posts);
+        const localPosts = JSON.parse(localStorage.getItem("posts")) || [];
+
+        setPosts([...localPosts, ...data.posts]);
         // ← the list is inside data.posts
         setLoading(false);
       })

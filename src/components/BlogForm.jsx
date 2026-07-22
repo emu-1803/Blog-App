@@ -3,7 +3,12 @@ import { useState } from "react";
 function BlogForm({ onSubmit }) {
   const [blog, setBlog] = useState({ title: "", content: "" });
   return (
-    <>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSubmit(blog);
+      }}
+    >
       <h1 className="font-extrabold text-start text-5xl text-emerald-950 p-3 mb-2">
         Write a New Post
       </h1>
@@ -42,9 +47,14 @@ function BlogForm({ onSubmit }) {
             }
           />
         </div>
-        <button className="bg-emerald-800 w-20 m-2 rounded-xl">Submit</button>
+        <button
+          type="submit"
+          className="bg-emerald-800 text-white w-20 p-2 m-2 rounded-xl hover:bg-emerald-900"
+        >
+          Submit
+        </button>
       </div>
-    </>
+    </form>
   );
 }
 
