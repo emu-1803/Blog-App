@@ -100,39 +100,45 @@ function BlogDetails() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 mt-8">
-      <p className="text-green-700 mb-6">
-        Tags: {post.tags?.join(", ") || "No tags"}
-      </p>
-      <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
+    <>
+      <h1 className="text-center font-extrabold text-4xl text-emerald-900">
+        All about it
+      </h1>
+      ;
+      <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 mt-8">
+        <p className="text-green-700 mb-6">
+          Tags: {post.tags?.join(", ") || "No tags"}
+        </p>
+        <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
 
-      <p className="text-gray-700 mb-6">{post.body}</p>
+        <p className="text-gray-700 mb-6">{post.body}</p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">Comments</h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">Comments</h2>
 
-      {comments.length === 0 ? (
-        <p>No comments yet.</p>
-      ) : (
-        comments.map((comment) => (
-          <div key={comment.id} className="border rounded-lg p-4 mb-3">
-            <h3 className="font-semibold">{comment.user.username}</h3>
+        {comments.length === 0 ? (
+          <p>No comments yet.</p>
+        ) : (
+          comments.map((comment) => (
+            <div key={comment.id} className="border rounded-lg p-4 mb-3">
+              <h3 className="font-semibold">{comment.user.username}</h3>
 
-            <p>{comment.body}</p>
-          </div>
-        ))
-      )}
+              <p>{comment.body}</p>
+            </div>
+          ))
+        )}
 
-      <div className="flex gap-4">
-        <button
-          onClick={back}
-          className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700"
-        >
-          Back
-        </button>
+        <div className="flex gap-4">
+          <button
+            onClick={back}
+            className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700"
+          >
+            Back
+          </button>
 
-        <BookmarkButton bookmarked={isBookmarked} onClick={handleBookmark} />
+          <BookmarkButton bookmarked={isBookmarked} onClick={handleBookmark} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

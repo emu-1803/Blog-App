@@ -1,8 +1,8 @@
-# 📝 Personal Blog App
+# Personal Blog App
 
 A simple React blog application built as a project to practice the core concepts of React. The app allows users to browse blog posts, read individual posts, create their own posts, bookmark favorites, and view comments.
 
-## 🚀 Features
+## Features
 
 - Browse blog posts fetched from the DummyJSON API
 - View full blog post details
@@ -14,7 +14,7 @@ A simple React blog application built as a project to practice the core concepts
 - Global bookmark state management using Jotai
 - Responsive interface styled with Tailwind CSS
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - React
 - React Router DOM
@@ -23,7 +23,7 @@ A simple React blog application built as a project to practice the core concepts
 - Lucide React Icons
 - DummyJSON API
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 src/
@@ -46,7 +46,7 @@ src/
 |__ index.css
 ```
 
-## 🌐 API Endpoints
+## API Endpoints
 
 ### Get Blog Posts
 
@@ -66,7 +66,7 @@ https://dummyjson.com/posts/:id
 https://dummyjson.com/comments/post/:id
 ```
 
-## 📄 Pages
+## Pages
 
 ### Home
 
@@ -93,7 +93,7 @@ https://dummyjson.com/comments/post/:id
 - Displays all bookmarked posts.
 - Allows users to revisit their saved posts.
 
-## ▶️ Getting Started
+## Getting Started
 
 1. Clone the repository.
 
@@ -121,7 +121,7 @@ npm run dev
 
 5. Open the application in your browser.
 
-## 📚 What I Learned
+## What I Learned
 
 Through this project I practiced:
 
@@ -137,6 +137,13 @@ Through this project I practiced:
 - Using Local Storage to persist user-created posts and bookmarks
 - Styling applications with Tailwind CSS
 
-## 👩‍💻 Author
+## screenshots
+
+<img src="src/images/blog.png" alt="">
+<img src="src/images/blog1.png" alt="">
+<img src="src/images/blog2.png" alt="">
+<img src="src/images/blog3.png" alt="">
+
+## Author
 
 **Eman Mohammed**

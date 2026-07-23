@@ -12,10 +12,7 @@ function Navbar() {
           <Link to="/bookmarks" className="hover:text-yellow-300 transition">
             BookMarks
           </Link>
-          <Link
-            to="/create"
-            className="bg-yellow-400 text-black px-4 py-1 rounded-lg hover:bg-yellow-300 transition"
-          >
+          <Link to="/create" className=" hover:text-yellow-300 transition">
             CreatePost
           </Link>
         </div>
