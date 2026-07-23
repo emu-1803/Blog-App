@@ -25,7 +25,7 @@ A simple React blog application built as a project to practice the core concepts
 
 ## Project Structure
 
-```text
+````text
 src/
 ├── atoms/
 │   └── bookmarkAtoms.jsx
@@ -44,8 +44,12 @@ src/
 ├── App.jsx
 └── main.jsx
 |__ index.css
-|__images
-```
+|__images/
+     |__blog.png
+```  |__blog1.png
+     |__blog2.png
+     |__blog3.png
+
 
 ## API Endpoints
 
@@ -53,7 +57,7 @@ src/
 
 ```text
 https://dummyjson.com/posts?limit=10
-```
+````
 
 ### Get a Single Post
 
