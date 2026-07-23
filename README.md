@@ -44,6 +44,7 @@ src/
 ├── App.jsx
 └── main.jsx
 |__ index.css
+|__images
 ```
 
 ## API Endpoints
